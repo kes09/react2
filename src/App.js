@@ -33,11 +33,11 @@ const App = () => {
   )
 }
 const Child =({users,isUserLoggedIn})=>{
-  if (users.length === 0) {
-    return <h2>No user in System</h2>
-  }
   if (isUserLoggedIn === false) {
     return <h2>are not authorized to see user list.</h2>
+  }
+  if (users.length === 0) {
+    return <h2>No user in System</h2>
   }
   return (
     <> 
